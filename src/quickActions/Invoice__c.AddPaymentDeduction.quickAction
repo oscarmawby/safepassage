@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Created by Oscar @ Impact Box, 07/08/2020</description>
-    <flowDefinition>AdHocPayment</flowDefinition>
-    <label>Add Payment/Deduction</label>
-    <optionsCreateFeedItem>false</optionsCreateFeedItem>
-    <type>Flow</type>
-</QuickAction>

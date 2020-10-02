@@ -1,6 +1,0 @@
-<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
-<tr valign="top" height="400" >
-<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
-<![CDATA[Dear&nbsp;{!Engagement__c.TutorFullName__c},<div><br></div><div>Thank you for applying for a Tutoring Position in {!Engagement__c.Subject__c} at&nbsp;{!Engagement__c.SchoolName__c}.</div><div><br></div><div>Unfortunately on this occasion your application has not been accepted, in most circumstances this is due to another applicant being more suited to this position.&nbsp;</div><div><br></div><div>Please keep an eye on the 'Apply for New Positions' tab in the <a href="https://tutortrust.force.com">Tutor Portal</a>&nbsp;as a new position may become available near you soon.&nbsp;</div><div><br></div><div>Kind Regards,</div><div><br></div><div>The Tutor Trust Team&nbsp;</div>]]></td>
-</tr>
-</table>
