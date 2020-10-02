@@ -1,12 +1,12 @@
 <project name="Deployment manager" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
 
     <property environment="env"/>
-    <property name="dev.username"          value="support+tt@impactbox.co.uk.impactbox"/>
-    <property name="dev.password"          value="5BbevmrH2NG7HP1vdJfiO2SGJ2dxJIWGAAKx"/>
-    <property name="testing.username"       value="support+tt@impactbox.co.uk.testing"/>
-    <property name="testing.password"       value="tzwQ1KaRh3JxaEfRE0vuIHYdKaJSwI4GqZGI"/>
-    <property name="prod.username"          value="support+tt@impactbox.co.uk"/>
-    <property name="prod.password"          value="tzwQ1KaRh3JxSQjWIiYJ1bpeNimyhOAq5qKdL"/>
+    <property name="dev.username"          value="support+sp@impactbox.co.uk.developer"/>
+    <property name="dev.password"          value="M3zCIC9efRwcbWRw29XnqZX7oBmAcJvPcfRu"/>
+    <property name="testing.username"       value=""/>
+    <property name="testing.password"       value=""/>
+    <property name="prod.username"          value="support+sp@impactbox.co.uk"/>
+    <property name="prod.password"          value="M3zCIC9efRwcLUd6L8ZHMWMxYWqRdHornUsE"/>
     <property name="sf.serverurl"           value="https://login.salesforce.com"/>
     <property name="sand.serverurl"           value="https://test.salesforce.com"/>
     <property name="sf.maxPoll"             value="200"/>
