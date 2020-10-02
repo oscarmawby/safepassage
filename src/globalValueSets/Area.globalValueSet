@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Leeds</fullName>
+        <default>false</default>
+        <label>Leeds</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool</fullName>
+        <default>false</default>
+        <label>Liverpool</label>
+    </customValue>
+    <customValue>
+        <fullName>Greater Manchester</fullName>
+        <default>false</default>
+        <label>Greater Manchester</label>
+    </customValue>
+    <masterLabel>Area</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

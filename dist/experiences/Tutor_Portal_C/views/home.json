@@ -1,0 +1,71 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "75e6de0d-d282-478c-a3fb-85335fd9ba83",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "Welcome to the Tutor Portal. From here you can complete session registers, apply for new placements, update your details and review your payment history.",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Tutor Portal",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "e95f4a8c-171c-4153-808d-1504f25d2451",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "07b44cf4-d9bc-4d59-9fb6-c74f0e4f36a3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "f7e32364-b765-43e6-8b66-a547db8732b3",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tileMenuEditor" : "Default_Navigation"
+      },
+      "componentName" : "forceCommunity:tileMenu",
+      "id" : "ee3fa38b-e988-42fe-b0ab-52c06225a658",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9af66027-8a01-4e9c-a2fe-2d45828ac568",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "c4bbcf48-54a2-4c3d-88d5-4f65642e2e0a",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "5db75c11-918d-4156-a0cd-7e186c806699",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "96588ba4-8983-4bd6-b90c-c1a20aaa23f7",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b02ad942-ce01-4f8b-af34-d78f0b2fd376",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

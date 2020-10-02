@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "516de7dd-9f6c-48ec-9158-857831498854",
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "id" : "c984d1a8-f05d-4af3-a7a8-33eb9e4df4db",
+  "label" : "Registers",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-registers",
+  "type" : "route",
+  "urlPrefix" : "registers"
+}

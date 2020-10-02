@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Tutor_trust_Default</letterhead>
+    <name>Referencing Request</name>
+    <style>freeForm</style>
+    <subject>Reference Request for {!Reference__c.ContactName__c}</subject>
+    <textOnly>Dear {!Reference__c.RefereeName__c},
+
+{!Reference__c.ContactName__c} has provided your details in order that you provide a {!Reference__c.Type__c} reference for them.
+
+Please complete the details within the below form link to provide your reference for them.
+
+{!Reference__c.ReferencingFormLink__c}
+
+Kind Regards,
+
+The Tutor Trust</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

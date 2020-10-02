@@ -1,0 +1,83 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "f16b028a-6e9d-4fa0-b5c4-5823e3a127b9",
+  "label" : "Account Management",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><b>Want to know where else you can tutor? The list below shows all of the available positions in schools right now.&nbsp;&nbsp;Click on any the ones you're interested in to find out more information, and if you're still keen to get involved then click the 'Apply' button.&nbsp;&nbsp;</b></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6352e68c-44ae-499a-b9e2-c0707c1f461b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"text-align: justify;\"><b>My Current Placements</b></h1>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "97091566-3f29-41f0-9eeb-ee3941c6dea5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "listName" : "MyEngagements",
+        "title" : ""
+      },
+      "componentName" : "c:IB_EditableRelatedList",
+      "id" : "6ddb0d2f-796e-49b0-8cb5-93a2a420bd21",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "063e0270-7165-4403-800e-524c3bd679a9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"text-align: justify;\"><br></h1><h1 style=\"text-align: justify;\"><b>Open Positions</b></h1>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "ac390d59-d8b6-40e9-8b3d-6fef32854db0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:TutorScoreComponent",
+      "id" : "b8259974-6e14-47b2-8173-4c281cd48126",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2c499bd9-9f78-436a-9f35-b6502968100b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ed7b4d46-9cee-4184-bf96-f99ba81f5b1d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "Account Management"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f66cf226-ca35-4421-ac4b-674af0395957",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "483c990a-2fee-4ef2-8496-3083a4ba058a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "account-management"
+}

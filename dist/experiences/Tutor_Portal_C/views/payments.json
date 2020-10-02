@@ -1,0 +1,85 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "d3836020-2e14-4f14-869a-72c166918185",
+  "label" : "Payments",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4c37ddfb-f9c9-4e0b-b9bf-036b2d439347",
+          "columns" : [ {
+            "UUID" : "349ddd5e-a95f-4cce-ab34-ba9cdd6c1503",
+            "columnName" : "Column 1",
+            "columnKey" : "1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4c37ddfb-f9c9-4e0b-b9bf-036b2d439347",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bannerText" : "Please review your payments below, you can view details and download a PDF record of your payment for each payment you have received. Payments details are sent to you on the 15th of every month you have a payment due and paid on the 25th of each month.",
+            "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "pageType" : "",
+            "showSubTopics" : true,
+            "title" : "Payments",
+            "uniqueNameOrId" : ""
+          },
+          "componentName" : "forceCommunity:headline",
+          "id" : "3b984728-3862-4e29-9b6c-dc7f1dda7ca9",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "listName" : "Invoice_on_contact",
+            "title" : ""
+          },
+          "componentName" : "c:IB_EditableRelatedListPayments",
+          "id" : "7f2ade3d-9247-488d-97a3-caf82438b696",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "349ddd5e-a95f-4cce-ab34-ba9cdd6c1503",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "14fe192a-ccce-4956-b9ef-b2c427d44d76",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "Payments"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "950728f6-1f2f-45f3-af3a-1d6ebe2f2122",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fd3856fe-e8ad-4eec-ac00-4c728214544f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-payments"
+}

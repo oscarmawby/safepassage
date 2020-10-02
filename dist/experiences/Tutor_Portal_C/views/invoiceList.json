@@ -1,0 +1,22 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "c4508937-56ec-45fb-ab45-eefa64141b99",
+  "label" : "Invoice List",
+  "regions" : [ {
+    "id" : "0051f9d3-cecf-4d53-9d0d-3f42e665bf6d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "eb9edc58-2af9-4cfc-a196-1c592cfe7e50",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "26d267af-7397-4323-9615-74557329d91a",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a1L"
+}

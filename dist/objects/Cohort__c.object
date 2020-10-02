@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Cohort_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A group of pupils and tutors (engagements) at a school assigned to a particular subject over a period of time. 
+
+Oscar Mawby @ Impact Box 11/12/19</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AP_LAC_Cohort__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Shows if a given cohort comes under the AP / LAC department</description>
+        <externalId>false</externalId>
+        <label>AP / LAC Cohort</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AcademicYear__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( SubjectYearKPI__r.AcademicYear__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Academic Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Area__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.Account.Area__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assignment__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>The assignment the cohort belongs to
+
+Oscar Mawby @ Impact Box 11/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Being replaced by Opportunity</inlineHelpText>
+        <label>Assignment</label>
+        <referenceTo>Assignment__c</referenceTo>
+        <relationshipLabel>Cohorts</relationshipLabel>
+        <relationshipName>Cohorts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AutumnHalfTermEnd__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Autumn Half Term End</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>AutumnHalfTermStart__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Autumn Half Term Start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>AutumnTermEnd__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Autumn Term End</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>AutumnTermStart__c</fullName>
+        <description>Oscar Mawby @ Impact Box 20/12/19</description>
+        <externalId>false</externalId>
+        <label>Autumn Term Start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CityArea__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Account.BillingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>City/Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CohortMigrationNumber__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Built for purposes of data migration, Oscar Mawby @ Impact box 22/01/20</description>
+        <externalId>false</externalId>
+        <label>Cohort Migration Number</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CohortName__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT( Opportunity__r.Account.Name ,40) &amp; &quot;, &quot; &amp; TEXT( Subject__c ) &amp; &quot;, &quot; &amp;  TEXT(SchoolYear__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cohort Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DiscountReasonDetail__c</fullName>
+        <description>Created by Oscar @ Impact Box, 03/08/2020</description>
+        <externalId>false</externalId>
+        <label>Discount Reason Detail</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount__c</fullName>
+        <description>Created by Oscar Mawby @ Impact Box, 03/08/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will be applied to every Payment related to this Cohort</inlineHelpText>
+        <label>Discount %</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <description>Oscar Mawby @ Impact Box 11/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the last session is scheduled for</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Funder__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Funder</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Funder must be a School or Funder account</errorMessage>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>&apos;Funder_Corporate&apos;, &apos;School&apos;</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Cohorts</relationshipLabel>
+        <relationshipName>Cohorts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>KPIAttendance__c</fullName>
+        <externalId>false</externalId>
+        <formula>SubjectYearKPI__r.AttendanceKPI__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KPI Attendance %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>KeyStage__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+ OR( ISPICKVAL( SchoolYear__c , &apos;5&apos;), ISPICKVAL( SchoolYear__c , &apos;6&apos;)), &apos;KS2&apos;,
+
+IF(
+
+ OR( ISPICKVAL( SchoolYear__c , &apos;7&apos;), ISPICKVAL( SchoolYear__c , &apos;8&apos;),ISPICKVAL( SchoolYear__c , &apos;9&apos;)), &apos;KS3&apos;,
+
+IF(
+
+ OR( ISPICKVAL( SchoolYear__c , &apos;10&apos;), ISPICKVAL( SchoolYear__c , &apos;11&apos;)), &apos;KS4&apos;,
+
+&apos;INVALID SCHOOL YEAR&apos;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Key Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Marks a record as Migrated from legacy systems. Oscar Mawby @ Impact box 22/01/20</description>
+        <externalId>false</externalId>
+        <label>Legacy</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NumberofPupils__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Number of Pupils</label>
+        <summaryFilterItems>
+            <field>Engagement__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pupil, KS2 Pupil, KS3 Pupil, KS4 Pupil</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Engagement__c.Cohort__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NumberofTutors__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Number of Tutors</label>
+        <summaryFilterItems>
+            <field>Engagement__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tutor</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Engagement__c.CoverTutor__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Engagement__c.EngagementStatus__c</field>
+            <operation>equals</operation>
+            <value>Accepted</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Engagement__c.Cohort__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Online_Cohort__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Online Cohort</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Cohorts</relationshipLabel>
+        <relationshipName>Cohorts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PupilAttendancePerc__c</fullName>
+        <externalId>false</externalId>
+        <formula>TotalPupilAttendances__c
+
+/
+
+(TotalPupilAbsences__c +  TotalPupilAttendances__c )</formula>
+        <label>Pupil Attendance %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RecordIDDataUpload__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cohort ID For Upload</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Right_Angle_Cohort__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Right Angle Cohort</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SchoolChargePerTutoringHour__c</fullName>
+        <description>Created by Oscar @ Impact Box, 22/07/2020</description>
+        <externalId>false</externalId>
+        <label>School Charge Per Tutoring Hour</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SchoolID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( Opportunity__r.AccountId )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School ID For Upload</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.School__r.Name</formula>
+        <label>School Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolType__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( SchoolYear__c,
+
+&apos;5&apos;, &apos;Primary&apos;,
+
+&apos;6&apos;, &apos;Primary&apos;,
+
+&apos;7&apos;, &apos;Secondary&apos;,
+
+&apos;8&apos;, &apos;Secondary&apos;,
+
+&apos;9&apos;, &apos;Secondary&apos;,
+
+&apos;10&apos;, &apos;Secondary&apos;,
+
+&apos;11&apos;, &apos;Secondary&apos;,
+
+Null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Based on School Year</inlineHelpText>
+        <label>School Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolYear__c</fullName>
+        <description>The School Year of this cohort 
+
+Oscar Mawby @ Impact Box 13/12/19</description>
+        <externalId>false</externalId>
+        <label>School Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Year</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SpringHalfTermEnd__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Spring Half Term End</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SpringHalfTermStart__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Spring Half Term Start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SpringTermEnd__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Spring Term End</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SpringTermStart__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Spring Term Start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <description>Oscar Mawby @ Impact Box 11/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the first session is due to start</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SubjectYearKPI__c</fullName>
+        <description>The relevant KPI for this cohort to be compared against
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The relevant KPIs for this cohort to be compared against</inlineHelpText>
+        <label>Subject Year</label>
+        <referenceTo>SubjectYearKPI__c</referenceTo>
+        <relationshipLabel>Cohorts</relationshipLabel>
+        <relationshipName>Cohorts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <description>Oscar Mawby @ Impact Box 11/12/19</description>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Subjects</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SummerHalfTermEnd__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Summer Half Term End</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SummerHalfTermStart__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Summer Half Term Start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SummerTermEnd__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Summer Term End</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SummerTermStart__c</fullName>
+        <description>Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <label>Summer Term Start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TargetPopulationNum__c</fullName>
+        <description>Oscar Mawby @ Impact Box 16/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number in Cohort population that are are either in receipt of pupil premium (PP), a looked after child (LAC), or in alternative provision (AP).</inlineHelpText>
+        <label>Target Population #</label>
+        <summaryFilterItems>
+            <field>Engagement__c.TargetPopulation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Engagement__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pupil, KS2 Pupil, KS3 Pupil, KS4 Pupil</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Engagement__c.Cohort__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TargetPopulationPerc__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <formula>TargetPopulationNum__c / NumberofPupils__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The percentage of pupils in this Cohort that are either in receipt of pupil premium (PP), a looked after child (LAC), or in alternative provision (AP).</inlineHelpText>
+        <label>Target Population %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TotalPupilAbsences__c</fullName>
+        <description>Counts the number of Pupil Absences
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts the number of Pupil Absences</inlineHelpText>
+        <label>Total Pupil Absences</label>
+        <summarizedField>Session__c.PupilAbsences__c</summarizedField>
+        <summaryForeignKey>Session__c.Cohort__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TotalPupilAttendances__c</fullName>
+        <description>Will count the number of pupils that have attended sessions. 
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts the number of pupils that have attended sessions</inlineHelpText>
+        <label>Total Pupil Attendances</label>
+        <summarizedField>Session__c.PupilAttendances__c</summarizedField>
+        <summaryForeignKey>Session__c.Cohort__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TotalPupilDosage__c</fullName>
+        <description>Sums the total hours students have spent in sessions
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sums the total hours students have spent in sessions</inlineHelpText>
+        <label>Total Pupil Dosage</label>
+        <summarizedField>Session__c.TotalPupilDosage__c</summarizedField>
+        <summaryForeignKey>Session__c.Cohort__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TotalSessions__c</fullName>
+        <description>Total number of sessions that have happened and scheduled within this cohort, will not count cancelled sessions. 
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of sessions that have happened and scheduled within this cohort, will not count cancelled sessions.</inlineHelpText>
+        <label>Total # Sessions</label>
+        <summaryFilterItems>
+            <field>Session__c.SessionCancelled__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Session__c.Cohort__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Cohort</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>NumberofPupils__c</columns>
+        <columns>AutumnHalfTermEnd__c</columns>
+        <columns>Assignment__c</columns>
+        <columns>SubjectYearKPI__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Funder__c</columns>
+        <columns>SchoolChargePerTutoringHour__c</columns>
+        <columns>NumberofTutors__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Cohort Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Cohorts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>DiscountPercRequiresReason</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+
+NOT(ISBLANK( Discount__c )),
+
+ISBLANK(DiscountReasonDetail__c ))</errorConditionFormula>
+        <errorDisplayField>DiscountReasonDetail__c</errorDisplayField>
+        <errorMessage>Please provide a reason for the discount.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TermDateGreaterThanPrevious</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+
+ AutumnTermStart__c  &gt;  AutumnHalfTermStart__c ,
+
+ AutumnHalfTermEnd__c  &gt; AutumnTermEnd__c,
+
+SpringTermStart__c &gt; SpringHalfTermStart__c,
+
+SpringHalfTermEnd__c &gt; SpringTermEnd__c,
+
+SummerTermStart__c &gt; SummerHalfTermStart__c,
+
+SummerHalfTermEnd__c &gt; SummerTermEnd__c
+
+)</errorConditionFormula>
+        <errorMessage>You have input a term date greater than the previous term date, please check the term dates.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

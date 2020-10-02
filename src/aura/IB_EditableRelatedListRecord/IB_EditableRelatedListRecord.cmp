@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="recValues" type="List"/>
+
+    <aura:iteration items="{!v.recValues.value}" var="fieldValue" indexVar="j" >
+        <td>
+            <c:IB_EditableRelatedListField fieldValues="{!fieldValue}" recId="{!v.recValues.opt.Id}" rec="{!v.recValues.opt}"/><!--fieldValue="{!fieldValue.value}" fieldType="{!fieldValue.type}" fieldLabel="{!fieldValue.label}" editable="{!fieldValue.editable}" plVals="{!fieldValue.plVals}"/>-->
+        </td>        
+    </aura:iteration>
+</aura:component>

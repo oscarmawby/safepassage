@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Invoice_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Invoice_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created by Oscar @ Impact Box 15/07/2020.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountFunder__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar @ Impact Box, 16/07/2020</description>
+        <externalId>false</externalId>
+        <label>Funder</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Funder Invoices</relationshipLabel>
+        <relationshipName>Invoices1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActualInvoiceDate__c</fullName>
+        <description>Created by Oscar @ Impact Box 15/07/2020</description>
+        <externalId>false</externalId>
+        <label>Actual Invoice Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CancelledInvoiceTotal__c</fullName>
+        <description>Cancelled Invoice Total before it was deleted.</description>
+        <externalId>false</externalId>
+        <label>Cancelled Invoice Total</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cohort__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar @ Impact Box</description>
+        <externalId>false</externalId>
+        <label>Cohort</label>
+        <referenceTo>Cohort__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DaysOverdue__c</fullName>
+        <description>Created by Oscar @ Impact Box, 30/07/2020</description>
+        <externalId>false</externalId>
+        <formula>IF( AND(ScheduledDate__c &gt; TODAY(),ISBLANK( InvoicePaidDate__c )),NULL,
+
+IF(ISBLANK( InvoicePaidDate__c ),
+
+TODAY()- ScheduledDate__c ,
+
+InvoicePaidDate__c - ScheduledDate__c)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This will count the days an invoice has gone unpaid after scheduled date. Once paid it will will show the number of days between the scheduled date and the paid date.</inlineHelpText>
+        <label>Days Overdue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FinanceContactEmail__c</fullName>
+        <externalId>false</externalId>
+        <formula>AccountFunder__r.FinanceContactEmail__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Finance Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FinanceContactName__c</fullName>
+        <externalId>false</externalId>
+        <formula>AccountFunder__r.FinanceContactName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Finance Contact Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InoiceNum__c</fullName>
+        <description>Created by Oscar @ Impact Box, 22/07/2020</description>
+        <displayFormat>INV-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Invoice Number, this number is shared between Tutor Invoices and School Invoices</inlineHelpText>
+        <label>Inoice Num</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>InvoiceDate__c</fullName>
+        <description>Created by Oscar @ Impact Box, 29/07/2020</description>
+        <externalId>false</externalId>
+        <label>Invoice Period Ending</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>InvoiceMonthNum__c</fullName>
+        <description>Created by Oscar @ Impact Box</description>
+        <externalId>false</externalId>
+        <formula>IF( RecordType.DeveloperName = &apos;SchoolCharge&apos;,
+
+MONTH( InvoiceDate__c ),
+
+MONTH( ScheduledDate__c )
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Month Num</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InvoiceNum__c</fullName>
+        <description>Created by Oscar @ Impact Box, 22/07/2020</description>
+        <displayFormat>INV-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Invoice Number, this number is shared between Tutor Invoices and School Invoices</inlineHelpText>
+        <label>Invoice Num</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>InvoicePaidDate__c</fullName>
+        <description>Created by Oscar @ Impact Box, 22/07/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Update this once you have confirmed the payment has been received.</inlineHelpText>
+        <label>Invoice Paid Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>InvoicePeriodStarting__c</fullName>
+        <description>Created by Oscar @ Impact Box, 10/08/2020</description>
+        <externalId>false</externalId>
+        <label>Invoice Period Starting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>InvoiceSent__c</fullName>
+        <description>Created by Oscar @ Impact Box, 22/07/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the invoice was last sent, if a correction is made and another invoice is sent this will be overwritten.</inlineHelpText>
+        <label>Invoice Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>InvoiceTotal__c</fullName>
+        <description>Created by Oscar @ Impact Box, 22/07/2020. Populated by DLRS</description>
+        <externalId>false</externalId>
+        <label>Invoice Total</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>InvoiceYear__c</fullName>
+        <description>Created by Oscar @ Impact Box, 29/07/2020</description>
+        <externalId>false</externalId>
+        <formula>YEAR(InvoiceDate__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NewInvoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar Mawby @ Impact Box, 12/08/2020. Populated by flow on cancellation.</description>
+        <externalId>false</externalId>
+        <label>New Invoice</label>
+        <referenceTo>Invoice__c</referenceTo>
+        <relationshipLabel>Old Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <description>Created by Oscar @ Impact Box, 29/07/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will appear on the Invoice PDF</inlineHelpText>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar @ Impact Box, 15/07/2020</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ScheduledDate__c</fullName>
+        <description>Created by Oscar @ Impact Box, 15/07/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the invoice payment is scheduled to be received by</inlineHelpText>
+        <label>Scheduled Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ScheduledSendDate__c</fullName>
+        <description>Created by Oscar @ Impact Box, 22/07/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date the invoice is scheduled to send</inlineHelpText>
+        <label>Scheduled Send Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SchoolInvoiceYear__c</fullName>
+        <description>Created by Oscar @ Impact Box, 03/08/2020</description>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR( InvoiceDate__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SchoolInvoiceYear</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar @ Impact Box, 15/07/2020</description>
+        <externalId>false</externalId>
+        <label>School</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>School Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Created by Oscar @ Impact Box, 30/07/2020</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>Partial</fullName>
+                    <default>false</default>
+                    <label>Partial</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Overdue</fullName>
+                    <default>false</default>
+                    <label>Overdue</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled, Create Replacement</label>
+                </value>
+                <value>
+                    <fullName>Cancelled, No Replacement</fullName>
+                    <default>false</default>
+                    <label>Cancelled, No Replacement</label>
+                </value>
+                <value>
+                    <fullName>Payment Failed</fullName>
+                    <default>false</default>
+                    <label>Payment Failed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TutorEngagement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar @ Impact Box 15/07/2020</description>
+        <externalId>false</externalId>
+        <label>Tutor Engagement</label>
+        <referenceTo>Engagement__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TutorInvoiceYear__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(ScheduledDate__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TutorInvoiceYear</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tutor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar @ Impact Box 15/07/2020</description>
+        <externalId>false</externalId>
+        <label>Tutor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>textInvoiceYear__c</fullName>
+        <description>Created by Oscar @ Impact Box, 03/08/2020</description>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(  ScheduledDate__c  ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>textTutorInvoiceYear</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Invoice</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>InvoiceTotal__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>FOR_UPDATE_School_Invoices_This_Month</fullName>
+        <columns>InvoiceNum__c</columns>
+        <columns>NAME</columns>
+        <columns>InvoiceTotal__c</columns>
+        <columns>Status__c</columns>
+        <columns>InvoicePaidDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Invoice__c.SchoolCharge</value>
+        </filters>
+        <filters>
+            <field>ScheduledDate__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Paid</value>
+        </filters>
+        <label>Outstanding School Invoices</label>
+    </listViews>
+    <listViews>
+        <fullName>Tutor_Payments_This_Month</fullName>
+        <columns>InvoiceNum__c</columns>
+        <columns>NAME</columns>
+        <columns>InvoiceTotal__c</columns>
+        <columns>Status__c</columns>
+        <columns>InvoicePaidDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Invoice__c.TutorPay</value>
+        </filters>
+        <filters>
+            <field>ScheduledDate__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Paid</value>
+        </filters>
+        <label>FOR UPDATE: Tutor Payments This Month</label>
+    </listViews>
+    <nameField>
+        <label>Invoice Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Invoices</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>SchoolCharge</fullName>
+        <active>true</active>
+        <description>For School Charge Summaries within a month</description>
+        <label>School Charge</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled%2C No Replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overdue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TutorPay</fullName>
+        <active>true</active>
+        <description>For Tutor Payment Summaries per month</description>
+        <label>Tutor Pay</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled%2C No Replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overdue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Failed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>InvoicePaidDate</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISPICKVAL(Status__c ,&apos;Paid&apos;),ISBLANK(InvoicePaidDate__c ))</errorConditionFormula>
+        <errorMessage>Invoice Paid Date and Status must be updated</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Create_Invoice</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Create Invoice</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&apos;/apex/SDOC__SDCreate1&apos;, null,[id=Invoice__c.Id, Object=&apos;Invoice__c&apos;,lightningnav=&apos;true&apos;,doclist=&apos;School Charge,School Charge Email&apos;])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Email_PDF</fullName>
+        <availability>online</availability>
+        <description>Created by Oscar @ Impact Box, 10/08/2020</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Email PDF</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&apos;/apex/SDOC__SDCreate1&apos;, null,[id=Invoice__c.Id, Object=&apos;Invoice__c&apos;,lightningnav=&apos;true&apos;,doclist=&apos;Tutor Pay,Tutor Pay Email&apos;])}</url>
+    </webLinks>
+</CustomObject>

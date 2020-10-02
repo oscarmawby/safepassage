@@ -1,0 +1,84 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "a84246ee-f344-4645-b690-fcade57c5c38",
+  "label" : "My Placements",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "043c18de-dbc9-455d-bef6-c1f871393e0b",
+          "columns" : [ {
+            "UUID" : "276460d1-9974-483a-8ca0-d44425e3c996",
+            "columnName" : "Column 1",
+            "columnKey" : "1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "043c18de-dbc9-455d-bef6-c1f871393e0b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bannerText" : "The list below shows your current Placements (Accepted Status) and Positions you have applied for but have not yet been accepted or declined by Tutor Trust (Bid Status).",
+            "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+            "pageType" : "",
+            "showSubTopics" : true,
+            "title" : "My Placements",
+            "uniqueNameOrId" : ""
+          },
+          "componentName" : "forceCommunity:headline",
+          "id" : "7d86810b-8429-467b-8c83-971cf9c13448",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "listName" : "MyPositions"
+          },
+          "componentName" : "c:IB_RelevantList",
+          "id" : "5545361b-484b-4d23-a22d-928ce922ab82",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "276460d1-9974-483a-8ca0-d44425e3c996",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "13ac5cf0-d70b-43e0-99e9-a689de100de8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "My Placements"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cdde9033-daf6-4e57-a615-c26d1d7b5571",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "56bff01a-19e5-4837-afbb-ece3a02b3144",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-placements"
+}

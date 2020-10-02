@@ -1,0 +1,22 @@
+<aura:component >
+    <aura:attribute name="position" type='String'/>
+    <aura:attribute name="positionArea" type="String"/>
+    <aura:attribute name="score" type="Decimal"/>
+    <aura:attribute name="distance" type="Decimal"/>
+    
+    <td style="font-weight:normal;">{!v.position.Name}
+    </td>
+    <td style="font-weight:normal;">{!v.score}
+    </td>
+    <td style="font-weight:normal;">{!v.distance}
+    </td>
+    <td style="font-weight:normal;">{!v.position.Area__c}
+    </td>
+    <td style="font-weight:normal;">{!v.position.DayofWeek__c}
+    </td>
+    <td style="font-weight:normal;">
+        <div style="text-align: center;">
+            <button class="slds-button slds-button_brand" onclick="{!c.getDetails}">Details</button> 
+       </div>
+    </td>
+</aura:component>

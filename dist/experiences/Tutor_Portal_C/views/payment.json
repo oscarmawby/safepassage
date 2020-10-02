@@ -1,0 +1,69 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "15779ee7-4ff6-4109-b163-3c55849f2c88",
+  "label" : "Payment",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "0844a641-decf-4aeb-b4a2-87f4d068368d",
+          "columns" : [ {
+            "UUID" : "f995816f-07fd-4ab3-abfc-c8f48ea5ea26",
+            "columnName" : "Column 1",
+            "columnKey" : "1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "0844a641-decf-4aeb-b4a2-87f4d068368d",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "7a862130-2687-434b-bad5-581f768cfd50",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f995816f-07fd-4ab3-abfc-c8f48ea5ea26",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "537704a6-03ed-40df-9aee-3dfdc5475338",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "Payment"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6189bc3e-fa00-4a40-b762-493292b8a576",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ca9ade8c-de29-4c2d-a012-778d2fcc5c62",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-payment"
+}

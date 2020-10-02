@@ -1,0 +1,55 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "345c084f-f160-4693-9f2d-a77a57d07c94",
+  "label" : "Record List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><b>All of your current tutoring engagements are listed below. Click on any to find out further information about the engagement. </b></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "c74e71ec-5708-48f4-8b1e-3ed4b856d7c1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9cec9fe1-80c2-443e-bb69-2f5bf2156c3a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "{!filterId}",
+        "layout" : "FULL",
+        "pageSize" : 10,
+        "scope" : "{!objectName}",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "9eab59dd-c9f2-4e41-95c4-a48ed3385900",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0a2d4216-8089-40ce-8ca4-895de55ec3d7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "0d68270d-cc5e-46af-aabb-cf421dcdc6b1",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list"
+}

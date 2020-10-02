@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "82472ad1-dc59-4e90-be9d-ad42a23ed378",
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "id" : "7758c0b2-cc12-4166-83c2-92c69f0e4138",
+  "label" : "Position List",
+  "objectApiName" : "Position__c",
+  "routeType" : "list-a0M",
+  "type" : "route",
+  "urlPrefix" : "position"
+}

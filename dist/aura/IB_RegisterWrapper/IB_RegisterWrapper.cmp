@@ -1,0 +1,32 @@
+<aura:component >
+    <aura:attribute name="wrapper" type="Object"/>
+    <aura:attribute name="registerOptions" type="Object"/>
+    <aura:attribute name="statusOptions" type="List"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    
+    <tr>
+        <td data-label="Name">
+            <div class="slds-truncate" title="{!v.wrapper.name}"><a href="{!'/'+v.wrapper.enrolmentId}">{!v.wrapper.name}</a></div>
+        </td>
+        <aura:if isTrue="{!v.registerOptions.AttendanceStatusField__c!=null}">        
+            <td data-label="status">
+                <lightning:select aura:id="statusId" name="status" value="{!v.wrapper.status}"  >
+                    <option value=""></option>
+                    <aura:iteration items="{!v.statusOptions}" var="option">
+                        <option value="{!option.key}">{!option.value}</option>
+                    </aura:iteration>
+                </lightning:select>        
+            </td>
+        </aura:if>
+        <aura:if isTrue="{!v.registerOptions.AttendanceBooleanField__c !=null}">
+            <td data-label="statusBoolean">
+                <ui:inputCheckbox aura:id="statusCheckbox" value="{!v.wrapper.statusBoolean}" click="{!c.toggleAttended}"/>
+            </td>
+            <aura:if isTrue="{!v.registerOptions.ExplicitlyMarkBooleanAbsence__c}">
+                <td data-label="absentBoolean">
+                    <ui:inputCheckbox aura:id="statusCheckbox" value="{!v.wrapper.absentBoolean}" click="{!c.toggleAbsent}"/>
+                </td>
+            </aura:if>
+        </aura:if>
+    </tr>
+</aura:component>

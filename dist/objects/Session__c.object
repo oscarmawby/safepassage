@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SessionRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Area__c</fullName>
+        <description>Created by Oscar Mawby @ Impact Box, August 24th 2020</description>
+        <externalId>false</externalId>
+        <formula>Cohort__r.Area__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CancellationReason__c</fullName>
+        <description>Created by Oscar @ Impact Box, 11/08/2020</description>
+        <externalId>false</externalId>
+        <label>Cancellation Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Cancellation_Reason</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cohort__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Cohort</label>
+        <referenceTo>Cohort__c</referenceTo>
+        <relationshipLabel>Sessions</relationshipLabel>
+        <relationshipName>Sessions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CreatedByCurrentUser__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CreatedBy.Id  = $User.Id, TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created by Current User</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EndDateTime__c</fullName>
+        <description>End time stored as Date/time for purposes of lightning flow</description>
+        <externalId>false</externalId>
+        <label>End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Group__c</fullName>
+        <description>This field will be used in the community to display the cohort name, but take the User to the Session record</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://impactbox-tutortrust.cs81.force.com/s/detail/&quot;&amp;Id,  Cohort__r.CohortName__c  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Marks a record as Migrated from legacy systems. Oscar Mawby @ Impact box 22/01/20</description>
+        <externalId>false</externalId>
+        <label>Legacy</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PupilAbsences__c</fullName>
+        <description>Counts pupils absent from the session
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts pupils absent from the session</inlineHelpText>
+        <label>Pupil Absences</label>
+        <summaryFilterItems>
+            <field>Attendance__c.AttendedSession__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pupil</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RegisterCompletedDate__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Attendance__c.Session__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PupilAttendancesScheduledCompleted__c</fullName>
+        <description>Oscar Mawby @ Impact Box 06/01/2020</description>
+        <externalId>false</externalId>
+        <label>Pupil Attendances Scheduled/Completed</label>
+        <summaryFilterItems>
+            <field>Attendance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pupil</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Attendance__c.Session__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PupilAttendances__c</fullName>
+        <description>Counts the number of pupils present at each session
+
+Counts the number of attendances where child did attend</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts the number of pupils present at each session</inlineHelpText>
+        <label>Pupil Attendances</label>
+        <summaryFilterItems>
+            <field>Attendance__c.AttendedSession__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pupil</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RegisterCompletedDate__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Attendance__c.Session__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>RegisterCompleted__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date on which the Register was last updated</inlineHelpText>
+        <label>Register Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RegisterName__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Register: &quot;&amp; 
+TEXT(DAY(SessionDate__c))&amp;&quot;/&quot;&amp;
+TEXT(MONTH(SessionDate__c))&amp;&quot;/&quot;&amp;
+TEXT(YEAR(SessionDate__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Register Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Register__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Click Here&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Register</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cohort__r.Opportunity__r.School__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SessionCancelled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked the Tutor will not be paid for this session and the school will not be charged. It will also be excluded from attendance reporting.</inlineHelpText>
+        <label>Session Cancelled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SessionDate__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the session is scheduled for/took place.</inlineHelpText>
+        <label>Session Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SessionLengthHours__c</fullName>
+        <description>Oscar Mawby @ Impact Box 30/12/19</description>
+        <externalId>false</externalId>
+        <formula>(Hour(  TIMEVALUE(EndDateTime__c)  ) - Hour(  TIMEVALUE(StartDateTime__c)  )) + ((Minute(TIMEVALUE(EndDateTime__c)) - Minute(TIMEVALUE(StartDateTime__c)))/60)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculated as a decimal e.g. 1.5 hours = 1 hour, 30 minutes</inlineHelpText>
+        <label>Session Length (hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SessionMigrationNumber__c</fullName>
+        <description>Built for purposes of data migration, Oscar Mawby @ Impact box 22/01/20</description>
+        <externalId>false</externalId>
+        <label>Session Migration Number</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SessionName__c</fullName>
+        <description>Will return the account name and session date an populate actual record name via process builder (session initiator)
+
+Oscar Mawby @ Impact Box 13/12/19</description>
+        <externalId>false</externalId>
+        <formula>LEFT(Tutor__r.TutorFullName__c,40) &amp; &quot; &quot; &amp; LEFT(   Cohort__r.Opportunity__r.School__r.Name   ,40) &amp; &quot; &quot; &amp; TEXT(DAY(SessionDate__c))&amp;&quot;/&quot;&amp;TEXT(MONTH(SessionDate__c))&amp;&quot;/&quot;&amp;TEXT(YEAR(SessionDate__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Session Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SessionNotes__c</fullName>
+        <description>Any notes that a tutor wants to add regarding the session</description>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SessionType__c</fullName>
+        <description>Created by Oscar @ Impact Box, 15/07/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In what way will the session be delivered?</inlineHelpText>
+        <label>Session Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Person</fullName>
+                    <default>true</default>
+                    <label>In Person</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Hybrid</fullName>
+                    <default>false</default>
+                    <label>Hybrid</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StartDateTime__c</fullName>
+        <description>Start time stored as Date/Time to allow for population via flow</description>
+        <externalId>false</externalId>
+        <label>Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Starts__c</fullName>
+        <externalId>false</externalId>
+        <formula>TIMEVALUE(StartDateTime__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Starts</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>TotalPupilDosage__c</fullName>
+        <externalId>false</externalId>
+        <formula>SessionLengthHours__c *  PupilAttendances__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Pupil Dosage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tutor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Oscar @ Impact Box, 03/08/2020</description>
+        <externalId>false</externalId>
+        <label>Tutor</label>
+        <referenceTo>Engagement__c</referenceTo>
+        <relationshipLabel>Sessions</relationshipLabel>
+        <relationshipName>Sessions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Session</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SessionDate__c</columns>
+        <columns>RegisterCompleted__c</columns>
+        <columns>PupilAttendancesScheduledCompleted__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Created_by_Me_Today</fullName>
+        <columns>NAME</columns>
+        <columns>SessionDate__c</columns>
+        <columns>SessionLengthHours__c</columns>
+        <columns>StartDateTime__c</columns>
+        <columns>PupilAttendancesScheduledCompleted__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>CreatedByCurrentUser__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Created by Me Today</label>
+    </listViews>
+    <listViews>
+        <fullName>Leeds_Sessions</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Area__c</field>
+            <operation>equals</operation>
+            <value>Leeds</value>
+        </filters>
+        <label>Leeds Sessions</label>
+    </listViews>
+    <listViews>
+        <fullName>Liverpool_Sessions</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Area__c</field>
+            <operation>equals</operation>
+            <value>Liverpool</value>
+        </filters>
+        <label>Liverpool Sessions</label>
+    </listViews>
+    <listViews>
+        <fullName>Manchester_Sessions</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Area__c</field>
+            <operation>equals</operation>
+            <value>Greater Manchester</value>
+        </filters>
+        <label>Manchester Sessions</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Sessions_Created_Today</fullName>
+        <columns>NAME</columns>
+        <columns>SessionDate__c</columns>
+        <columns>SessionLengthHours__c</columns>
+        <columns>PupilAttendancesScheduledCompleted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>CreatedByCurrentUser__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Sessions Created by Me Today</label>
+    </listViews>
+    <nameField>
+        <label>Session Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Sessions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cancellation_Reason_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( SessionCancelled__c, ISBLANK(TEXT( CancellationReason__c )))</errorConditionFormula>
+        <errorDisplayField>CancellationReason__c</errorDisplayField>
+        <errorMessage>Please provide a cancellation reason</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,63 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "516de7dd-9f6c-48ec-9158-857831498854",
+  "label" : "registers",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "You can find a list of the registers you need to complete below, please complete a register either during the session or as soon as possible after the session.",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Your Registers",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "a2229047-f92e-45e3-9d5a-00064b3417ba",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b0f8e626-cef3-4f51-8de5-e13a6a2bd5a2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "listName" : "RegistersToComplete"
+      },
+      "componentName" : "c:IB_RelevantList",
+      "id" : "dc69a952-d6ab-482f-a05a-41fa19a66b90",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3ea0db65-80dc-48b1-9c5a-8ab8060b6bfd",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "b345f0fe-36e7-4f76-a219-25ae6eaf934b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "Registers"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "38ad5aef-7512-4fcd-80a7-9d46e95341ba",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3cc9d2ec-9b09-4784-a1b9-8c87ae4eb665",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-registers"
+}

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<type>
+		<members>Account</members>
+		<members>Contact</members>
+		<members>Position__c</members>
+		<members>Engagement__c</members>
+		<members>Attendance__c</members>
+		<members>Cohort__c</members>
+		<members>User</members>
+		<members>Assignment__c</members>
+		<members>Session__c</members>
+		<members>Opportunity</members>
+		<members>npe01__OppPayment__c</members>
+		<members>MatchingCriteria__mdt</members>
+		<name>CustomObject</name>
+	</type>
+	<type>
+		<members>DataFactory</members>
+		<members>TutorScore</members>
+		<members>TutorScoreTest</members>
+		<members>TutorScoreTest</members>
+		<name>ApexClass</name>
+	</type>
+	<type>
+		<members>DataFactory</members>
+		<members>TutorScore</members>
+		<members>TutorScoreTest</members>
+		<members>TutorScoreTest</members>
+		<name>ApexTrigger</name>
+	</type>
+    <type>
+		<members>TutorScoreComponent</members>
+        <members>MapEntryChild</members>
+        <members>PositionScore</members>
+        <members>PositionScoreTutor</members>
+        <name>AuraDefinitionBundle</name>
+    </type>
+    <type>
+		<members>OpportunityStage</members>
+		<members>OpportunityType</members>
+		<members>AccountType</members>
+		<name>StandardValueSet</name>
+	</type>
+	<type>
+		<members>*</members>
+		<name>GlobalValueSet</name>
+	</type>
+	<type>
+		<members>*</members>
+		<name>CustomMetadata</name>
+	</type>
+	<type>
+		<members>Engagement__c-Tutor Layout</members>
+		<members>Engagement__c-KS2 Pupil</members>
+		<members>Engagement__c-KS3 Pupil</members>
+		<members>Engagement__c-KS4 Pupil</members>
+		<members>Attendance__c-Attendance Layout</members>
+		<members>Attendance__c-Tutor Layout</members>
+		<members>Position__c-Position Layout</members>
+		<members>Position__c-Tutor Position Layout</members>
+		<members>Cohort__c-Cohort Layout</members>
+		<members>User-User Layout</members>
+		<members>UserAlt-User Profile Layout</members>
+		<members>Contact-Tutor Layout</members>
+		<members>Contact-Primary Pupil Layout</members>
+		<members>Session__c-Session Layout</members>
+		<members>Opportunity-Opportunity Layout</members>
+		<members>npe01__OppPayment__c-Outgoing Payment Layout</members>
+		<members>npe01__OppPayment__c-Incoming Payment Layout</members>
+		<name>Layout</name>
+	</type>
+	<type>
+		<members>Tutor_trust_Default</members>
+        <name>Letterhead</name>
+	</type>
+	<type>
+		<members>Engagement__c.Send Acceptance Email</members>
+		<members>Engagement__c.Send Rejection Email</members>
+        <name>WorkflowRule</name>
+	</type>
+	<type>
+		<members>Engagement__c.BidRejected</members>
+		<members>Engagement__c.Bid_Accepted</members>
+		<name>WorkflowAlert</name>
+	</type>
+	<type>
+		<members>Engagement__c.Update_Send_Date</members>
+		<name>WorkflowFieldUpdate</name>
+	</type>
+	<type>
+		<members>TutorEmails</members>
+		<members>TutorEmails/Bid_Acceptance_Email</members>
+		<members>TutorEmails/Bid_Rejection_Email</members>
+        <name>EmailTemplate</name>
+	</type>
+	<types>
+        <members>SharedDocuments/TTLogo</members>
+        <name>Document</name>
+    </types>   
+	<type>
+		<members>Tutor_Trust</members>
+		<name>CustomApplication</name>
+	</type>
+	<type>
+		<members>Position__c</members>
+		<name>CustomTab</name>
+	</type>
+	<type>
+		<members>Contact_Record_Page</members>
+		<members>Engagement_Record_Page</members>
+		<members>Position_Record_Page</members>
+		<members>Cohort_Page</members>
+		<members>Engagement_Record_Page1</members>
+		<members>Engagement_Record_Page</members>
+		<members>CoordinatorHomepage</members>
+		<members>Home_Page_Default</members>
+		<name>FlexiPage</name>
+	</type>
+	<type>
+		<members>Session_Group_Creation</members>
+		<members>Update_Future_Tutor_Attendances</members>
+		<members>Attendance_Initiator</members>
+		<members>NewBidEngagement</members>
+		<members>Session_actions</members>
+		<members>Add_Cover_Tutor</members>
+		<members>Cohort_Initiator</members>
+		<members>Contact_Actions</members>
+		<members>User_Actions</members>
+		<members>Convert_Assignments_to_Opportunities</members>
+		<members>Find_Create_School_Payments</members>
+		<members>Get_Find_Payments</members>
+		<name>Flow</name>
+	</type>
+	<type>
+		<members>Position__c.Apply</members>
+		<members>Session__c.Add_Cover_Tutor</members>
+		<name>QuickAction</name>
+	</type>
+	<type>
+		<members>Positions_with_Engagements</members>
+		<members>Subject_Year_KPIs_with_Cohorts_With_Engagements</members>
+		<members>Subject_Year_KPIs_with_Cohorts_with_Engagements_with_Attendances</members>
+		<members>Subject_Year_KPIs_with_Cohorts_with_Sessions</members>
+		<members>Subject_Year_KPIs_with_Cohorts_with_Sessions_with_Attendances</members>
+		<members>Accounts_with_Assignments</members>
+		<members>Accounts_with_Assignments_with_Cohorts</members>
+		<members>Attendances</members>
+		<members>Cohorts</members>
+		<members>Contacts</members>
+		<members>Dashboards</members>
+		<members>Engagements</members>
+		<members>Sessions</members>
+		<members>Positions_with_Engagments</members>
+		<members>Cohorts_with_Engagements</members>
+		<name>ReportType</name>
+	</type>
+	<type>
+		<members>CommunityReports</members>
+		<members>Finance</members>
+		<members>KPIs</members>
+		<members>CoordinatorReports</members>
+		<members>KPIs/SchoolReview</members>
+		<members>CommunityReports/My_Pending_Sessions</members>
+		<members>CommunityReports/My_Confirmed_Sessions</members>
+		<members>Finance/AttendanceEditedAfterApproval1</members>
+		<members>KPIs/Average_Target_Population_AJS</members>
+		<members>KPIs/Pupil_Attendance_u2L</members>
+		<members>KPIs/SchoolReview/Secondary_Review_20y</members>
+		<members>KPIs/SchoolReview/Primary_Review_MIC</members>
+		<members>CoordinatorReports/NewBidsOnMyPositionsToday</members>
+		<members>KPIs/Number_of_Pupils_Served</members>
+		<name>Report</name>
+	</type>
+	<type>
+		<members>KPIs</members>
+		<members>KPIs/xIMqHuHvcKAqDgORqNOjQkSMofwJZK1</members>
+		<name>Dashboard</name>
+	</type>
+	<type>
+		<members>dlrs_AttendanceTrigger</members>
+		<name>ApexTrigger</name>
+	</type>
+	<type>
+		<members>dlrs_AttendanceTest</members>
+		<name>ApexClass</name>
+	</type>
+	<type>
+		<members>IB_EditableListSetting.MyPositions</members>
+		<members>IB_EditableListSetting.RegistersToComplete</members>
+		<members>IB_EditableListSetting.ActiveEngagements</members>
+		<members>IB_EditableListSetting.MyEngagements</members>
+		<members>IB_EditableListField.Register</members>
+		<members>IB_EditableListField.School</members>
+		<members>IB_EditableListField.Start</members>
+		<members>IB_EditableListField.End</members>
+		<members>IB_EditableListField.Date</members>
+		<members>IB_EditableListField.Frequency</members>
+		<members>IB_EditableListField.Day</members>
+		<members>IB_EditableListField.SchoolName</members>
+		<members>IB_EditableListField.EndDate</members>
+		<members>IB_EditableListField.Time</members>
+		<members>IB_EditableListField.Position</members>
+		<members>IB_EditableListField.Cohort</members>
+		<members>IB_EditableListField.EngagementDay</members>
+		<members>IB_EditableListField.PositionStartDate</members>
+		<members>IB_EditableListField.PositionStartTime</members>
+		<members>IB_EditableListField.PositionEndDate</members>
+		<members>IB_EditableListField.EngStatus</members>
+		<members>IB_EditableListField.EngDay</members>
+		<members>IB_EditableListField.EngPositionStartTime</members>
+		<members>IB_EditableListField.EngFreq</members>
+		<members>IB_EditableListField.EngSchoolName</members>
+		<members>IB_EditableListField.EngEndDate</members>
+		<members>dlrs__LookupRollupSummary2.PAYMENTActualTutorPay</members>
+		<members>dlrs__LookupRollupSummary2.PAYMENTEstimatedtutorPay</members>
+		<members>dlrs__LookupRollupSummary2.PAYMENTActualTutorPaySchool</members>
+		<members>dlrs__LookupRollupSummary2.PAYMENTEstimatedtutorPaySchool</members>
+		<members>dlrs__LookupRollupSummary2.PAYMENTTotalTutoringHours</members>
+		<name>CustomMetadata</name>
+	</type>
+	<type>
+		<members>Admin</members>
+		<members>ContractManager</members>
+		<members>Coordinator</members>
+		<members>Customer Community Login User</members>
+		<members>Standard</members>
+		<members>Teacher Portal Profile</members>
+		<members>TT Standard</members>
+		<members>Tutor Portal Profile</members>
+		<members>Tutor</members>
+		<name>Profile</name>
+	</type>
+	<type>
+		<members>*</members>
+		<name>PermissionSet</name>
+	</type>
+    <version>48.0</version>
+</Package>

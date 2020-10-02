@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Tutor Cancelled</fullName>
+        <default>false</default>
+        <label>Tutor Cancelled, No Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>School Cancelled Tutor Paid</fullName>
+        <default>false</default>
+        <label>School Cancelled, Tutor Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>Tutor Non-Attendance</fullName>
+        <default>false</default>
+        <label>Tutor Non-Attendance, Tutor Not Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>School Cancelled Not Paid</fullName>
+        <default>false</default>
+        <label>School Cancelled, No Payment</label>
+    </customValue>
+    <masterLabel>Cancellation Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

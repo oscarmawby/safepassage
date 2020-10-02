@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "a84246ee-f344-4645-b690-fcade57c5c38",
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "id" : "4e779e27-d170-4df7-8f26-e85c70b3bfc7",
+  "label" : "My Placements",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-placements",
+  "type" : "route",
+  "urlPrefix" : "my-placements"
+}

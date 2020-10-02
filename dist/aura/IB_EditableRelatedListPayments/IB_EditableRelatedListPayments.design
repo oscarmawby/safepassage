@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="listName" label="Metadata record name" default="Contact" required="true"/>    	
+    <design:attribute name="title" label="Title" />     
+</design:component>

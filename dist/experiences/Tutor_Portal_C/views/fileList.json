@@ -1,0 +1,42 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "331dfcbb-b361-454e-869c-b5bc02de705e",
+  "label" : "File List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><b>All of your previous Tutor Trust payments </b></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "3423f6f3-eef5-4180-83a3-407ce8518205",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "55994624-21e8-4451-bd9e-eab39ee8ea7a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "pageSize" : 25
+      },
+      "componentName" : "forceCommunity:filesList",
+      "id" : "335802db-28d7-4c0f-b3b6-603b46c2ecda",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "42774f2a-9a1f-4556-9a77-f4fb8b9d8dbd",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "bdd465df-aaac-409f-a7e7-6148e054bd49",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-069"
+}

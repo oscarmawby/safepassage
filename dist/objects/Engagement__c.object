@@ -1,0 +1,2320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Engagement_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A junction object to allow multiple tutors and pupils to be related to multiple cohorts and vice versa. 
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Absences__c</fullName>
+        <description>Counts the number of absences for sessions where register has been completed.
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts the number of absences for sessions where register has been completed.</inlineHelpText>
+        <label>Absences</label>
+        <summaryFilterItems>
+            <field>Attendance__c.AttendedSession__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RegisterCompletedDate__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Attendance__c.Engagement__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>AcceptRejectEmailSent__c</fullName>
+        <description>Populated by workflow</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Once this is populated no further emails will be sent, if you&apos;d like to send another accept/reject email for any reason please remove the value from this field.</inlineHelpText>
+        <label>Accept/Reject Email Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>AchievedEXS__c</fullName>
+        <description>True if Final SATs Score &gt;= 100
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <formula>AND( KeyStage__c = 2,  FinalEndScore__c &gt;= 100 )</formula>
+        <inlineHelpText>True if Final Score &gt;= 100</inlineHelpText>
+        <label>Achieved EXS?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AchievedGD__c</fullName>
+        <description>If Ending SATs score &gt;= 110
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <formula>AND( KeyStage__c = 2, FinalEndScore__c &gt;= 110 )</formula>
+        <inlineHelpText>True If End score &gt;= 110</inlineHelpText>
+        <label>Achieved GD?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ActiveTutor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Automatically populated with the Tutor when the Status is active and removed after the end date</description>
+        <externalId>false</externalId>
+        <label>Active Tutor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Current Active Engagements</relationshipLabel>
+        <relationshipName>ActiveEngagements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AlternativeProvision__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <label>Alternative Provision</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YNU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendancePerc__c</fullName>
+        <description>The % of sessions this engagement has been scheduled to attend and has attended.
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <formula>Attendances__c
+
+/
+
+( Absences__c + Attendances__c )</formula>
+        <inlineHelpText>The % of sessions this engagement has been scheduled to attend and has attended.</inlineHelpText>
+        <label>Attendance %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>AttendancesReassigned__c</fullName>
+        <description>Populated by flow on completion of flow triggered by updating pupils tutor when attendances are scheduled.</description>
+        <externalId>false</externalId>
+        <label>Attendances Reassigned date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Attendances__c</fullName>
+        <description>Counts the number of attendances marked as present for this engagement. 
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts the number of attendances marked as present for this engagement.</inlineHelpText>
+        <label>Attendances</label>
+        <summaryFilterItems>
+            <field>Attendance__c.AttendedSession__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RegisterCompletedDate__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pupil</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Attendance__c.Engagement__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>BaselineScore__c</fullName>
+        <description>The Mock/Baseline score for this pupil within the Cohort Year and Subject e.g. English Lit, Year 11 = GCSE Mock Grade. 
+
+Oscar Mawby @ Impact Box 13/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Mock/Baseline score for this pupil within the Cohort Year and Subject e.g. English Lit, Year 11 = GCSE Mock Grade.</inlineHelpText>
+        <label>Baseline/Mock Score</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Borderline__c</fullName>
+        <description>True if Mock GCSE Grade ≥3.0 and ≤4.0
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <formula>AND(
+
+ KeyStage__c = 4,
+
+ BaselineScore__c &gt;= 3,
+
+ BaselineScore__c &lt;= 4)</formula>
+        <inlineHelpText>True if Mock GCSE Grade ≥3.0 and ≤4.0</inlineHelpText>
+        <label>Borderline</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( NOT(ISBLANK(Pupil__c)),
+
+ Pupil__r.Account.BillingCity,
+
+  Tutor__r.Account.BillingCity)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Based on Tutor or Pupils Account City</inlineHelpText>
+        <label>City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CohortStartDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cohort__r.StartDate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cohort Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CohortUpload__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Cohort Upload that created this record (via data upload and Cohort Upload flow). 
+
+Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <label>Cohort Upload</label>
+        <referenceTo>CohortUpload__c</referenceTo>
+        <relationshipLabel>Engagements</relationshipLabel>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cohort__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Cohort</label>
+        <referenceTo>Cohort__c</referenceTo>
+        <relationshipLabel>Engagements</relationshipLabel>
+        <relationshipName>Engagements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ConfirmTutorChange__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick this box when confirming you wish to permanently update a pupil&apos;s tutor on all future attendance records. Note, this may take up to a couple of minutes to updated.</inlineHelpText>
+        <label>Confirm Tutor Change?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContactId__c</fullName>
+        <externalId>false</externalId>
+        <formula>Pupil__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactName__c</fullName>
+        <description>Returns the Pupil or Tutors name on the contact depending on record type, if record has no tutor or pupil will default to auto-number. 
+
+Oscar Mawby @ Impact Box 13/12/19</description>
+        <externalId>false</externalId>
+        <formula>CASE(  Type__c ,
+
+ &apos;Pupil&apos;,  Pupil__r.FirstName  &amp; &quot; &quot; &amp; LEFT(Pupil__r.LastName,1),
+
+ &apos;Tutor&apos;,  Tutor__r.FirstName &amp; &quot; &quot; &amp; LEFT(Tutor__r.LastName,1),
+
+ Name
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Returns the Pupil or Tutors name on the contact depending on record type, if record has no tutor or pupil will default to auto-number.</inlineHelpText>
+        <label>Contact Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactTimeHourlyPayRate__c</fullName>
+        <defaultValue>14</defaultValue>
+        <externalId>false</externalId>
+        <label>Contact Time Hourly Pay Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CoverTutor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check if Engagement record is being created for a single session and you do not want it to be included in summaries. 
+
+Oscar Mawby @ Impact Box 22/01/2020</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To add a Cover Tutor for a Single Session use the &apos;Add Cover Tutor&apos; button on the Session record.</inlineHelpText>
+        <label>Cover Tutor</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CreatedByCurrentUser__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CreatedBy.Id = $User.Id, TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created by Current User</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CurrentIncompleteRegisters__c</fullName>
+        <description>Created by Oscar Mawby @ Impact Box, 12/08/2020. Populated by DLRS, counts the number of Tutor attendances where register is incomplete.</description>
+        <externalId>false</externalId>
+        <label>Current Incomplete Registers</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Day__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Position__r.DayofWeek__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dosage__c</fullName>
+        <description>Total number of hours of tutoring received
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of hours of tutoring received</inlineHelpText>
+        <label>Dosage</label>
+        <summarizedField>Attendance__c.SessionLengthhours__c</summarizedField>
+        <summaryFilterItems>
+            <field>Attendance__c.AttendedSession__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pupil</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RegisterCompletedDate__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Attendance__c.Engagement__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>EngagementMigrationNumber__c</fullName>
+        <description>Built for purposes of data migration, Oscar Mawby @ Impact box 22/01/20</description>
+        <externalId>false</externalId>
+        <label>Engagement Migration Number</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EngagementName__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+Type__c = &apos;Pupil&apos;, ContactName__c &amp; &quot;, &quot; &amp;  TEXT(Cohort__r.Subject__c) &amp; &quot;, &quot; &amp;  TEXT(Cohort__r.SchoolYear__c),
+
+  TEXT(Cohort__r.Subject__c) &amp; &quot; &quot; &amp; IF( CoverTutor__c , &quot;Cover &quot;, NULL) &amp; &quot;Tutor: &quot; &amp; ContactName__c
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Engagement Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EngagementStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Engagement Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bid</fullName>
+                    <default>false</default>
+                    <label>Bid</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EnglishasanAdditionalLanguage__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <label>English as an Additional Language</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YNU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FinalEndScore__c</fullName>
+        <description>The Final/End Score for this pupil within the Cohorts Subject and Year e.g. Year 7, Maths = PuMA/PiRA end
+
+Oscar Mawby @ Impact Box 13/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Final/End Grade for this pupil within the Cohorts Subject and Year e.g. Year 7, Maths = PuMA/PiRA end</inlineHelpText>
+        <label>Final/End Score</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FreeSchoolMeals__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <label>Free School Meals</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YNU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Frequency__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Position__r.Frequency__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HasMultipleTutors__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked if Pupil had multiple tutors pre-migration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked if Pupil had multiple tutors pre-migration</inlineHelpText>
+        <label>Has Multiple Tutors</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsMyEngagement__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.Id =  Tutor__r.CommunityUser__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is My Engagement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsMyPosition__c</fullName>
+        <description>If current user owns related position, created for a list view</description>
+        <externalId>false</externalId>
+        <formula>$User.Id = Position__r.OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is My Position</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>KS1Group__c</fullName>
+        <description>Oscar Mawby @ Impact Box 18/12/2019</description>
+        <externalId>false</externalId>
+        <formula>IF(   
+   AND( KeyStage__c = 2,  KS1Score__c &lt; 96), &apos;LOW&apos;,
+
+   IF( 
+      AND( KeyStage__c = 2,  KS1Score__c &gt;= 96,KS2Score__c &lt;= 106), &apos;MEDIUM&apos;,
+
+      IF( 
+         AND( KeyStage__c = 2,  KS1Score__c &gt;= 107), &apos;HIGH&apos;, NULL)
+
+     )
+)</formula>
+        <inlineHelpText>Returns the KS1 Group if engagement is in KS2, based on the KS1 Score</inlineHelpText>
+        <label>KS1 Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KS1Score__c</fullName>
+        <description>Oscar Mawby @ Impact Box 18/12/19</description>
+        <externalId>false</externalId>
+        <label>KS1 Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KS2Group__c</fullName>
+        <description>Returns the KS2 Group if engagement is in KS4 or KS3, based on key stage 2 score. 
+
+Oscar Mawby @ Impact Box 18/12/19</description>
+        <externalId>false</externalId>
+        <formula>IF(   
+   
+AND(KeyStage__c = 4,  KS2Score__c &lt; 4), &apos;LOW&apos;,
+
+IF(AND(KeyStage__c = 4,  KS2Score__c &gt;= 4,KS2Score__c &lt; 5), &apos;MEDIUM&apos;,
+
+IF(AND(KeyStage__c = 4,  KS2Score__c &gt;= 5), &apos;HIGH&apos;,
+
+IF(AND(KeyStage__c = 3,  KS2Score__c &lt; 96), &apos;LOW&apos;,
+
+IF(AND(KeyStage__c = 3,  KS2Score__c &gt;= 96, KS2Score__c &lt;= 106), &apos;MEDIUM&apos;,
+
+IF(AND(KeyStage__c = 3,  KS2Score__c &gt;= 107), &apos;HIGH&apos;,
+
+&apos;No Group&apos;))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Returns the KS2 Group if engagement is in KS4 or KS3, based on key stage 2 score.</inlineHelpText>
+        <label>KS2 Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KS2Score__c</fullName>
+        <externalId>false</externalId>
+        <label>KS2 Score</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KeyStage__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( SchoolYear__c, 
+
+     &apos;5&apos;,2,
+     &apos;6&apos;,2,
+     &apos;7&apos;,3,
+     &apos;8&apos;,3,
+     &apos;9&apos;,3,
+     &apos;10&apos;,4,
+     &apos;11&apos;,4,
+0)</formula>
+        <label>Key Stage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Marks a record as Migrated from legacy systems. Oscar Mawby @ Impact box 22/01/20</description>
+        <externalId>false</externalId>
+        <label>Legacy</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LookedAfterChild__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <label>Looked After Child</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YNU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MaxSessionDate__c</fullName>
+        <description>Session date furthest in the future
+
+Oscar Mawby</description>
+        <externalId>false</externalId>
+        <label>Max Session Date</label>
+        <summarizedField>Attendance__c.SessionDateDate__c</summarizedField>
+        <summaryForeignKey>Attendance__c.Engagement__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NonContactHourlyPayRate__c</fullName>
+        <defaultValue>7</defaultValue>
+        <externalId>false</externalId>
+        <label>Non-Contact Hourly Pay Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NonContactTimePerSessionhours__c</fullName>
+        <externalId>false</externalId>
+        <label>Non-Contact Time Per Session (hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberofPupils__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of Pupils this Tutor engagement is the Tutor for</inlineHelpText>
+        <label>Number of Pupils</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PositionEndDate__c</fullName>
+        <description>For use in an email merge field, created by Oscar @ Impact Box 24/06/2020</description>
+        <externalId>false</externalId>
+        <formula>Position__r.EndDate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Position End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PositionStartDate__c</fullName>
+        <description>Created for a list view</description>
+        <externalId>false</externalId>
+        <formula>Position__r.StartDate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Position Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PositionStartTime__c</fullName>
+        <description>For use in an email merge field, created by Oscar @ Impact Box 24/06/2020</description>
+        <externalId>false</externalId>
+        <formula>Position__r.StartTime__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Position Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <referenceTo>Position__c</referenceTo>
+        <relationshipLabel>Engagements</relationshipLabel>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PostPVEnjoyedTuition__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Post PV: Enjoyed Tuition</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PostPVHelpedToImprove__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Post PV: Helped To Improve</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrePVAbilityPerception__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Pre PV: Ability Perception</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrePVAskingForHelp__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre PV: Asking For Help</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrePVEnjoyment__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Pre PV: Enjoyment</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrePVResilience__c</fullName>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Pre PV: Resilience</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProgressMade__c</fullName>
+        <description>Final Score - Baseline Score
+
+Oscar Mawby @ Impact Box, 19/12/19</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(FinalEndScore__c), NULL,
+
+FinalEndScore__c - BaselineScore__c)</formula>
+        <inlineHelpText>Final Score - Baseline Score</inlineHelpText>
+        <label>Progress Made</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PupilPremium__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <label>Pupil Premium</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YNU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pupil__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <label>Pupil</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Pupil</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Pupil Engagements</relationshipLabel>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PupilsTutor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>This will show a list of Tutors that have engagements within this cohort, if you cannot find your desired Tutor you may need to create an Engagement for them within this Cohort.</inlineHelpText>
+        <label>Pupil&apos;s Tutor</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Engagement__c.Cohort__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Cohort__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Engagement__c.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Tutor</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Engagement__c</referenceTo>
+        <relationshipLabel>Pupils</relationshipLabel>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RegisterName__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Tutor__c),
+
+Pupil__r.FirstName &amp;&quot; &quot;&amp; Pupil__r.LastName,
+
+&quot;Tutor: &quot;&amp;Tutor__r.FirstName &amp;&quot; &quot;&amp; Tutor__r.LastName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Register Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SEND__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <label>SEND</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YNU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SchoolAttendance__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The attendance % of pupil at school at time of upload</inlineHelpText>
+        <label>School Attendance</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SchoolName__c</fullName>
+        <description>For use in an email merge field, created by Oscar @ Impact Box 24/06/2020</description>
+        <externalId>false</externalId>
+        <formula>Cohort__r.SchoolName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolYear__c</fullName>
+        <description>Oscar Mawby @ Impact Box 18/12/19</description>
+        <externalId>false</externalId>
+        <label>School Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>School_Year</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <description>For use in an email merge field, created by Oscar @ Impact Box 24/06/2020</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Cohort__r.Subject__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Subject</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuccessAchieved__c</fullName>
+        <description>True if Final Score is is greater or equal to Target Score
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <formula>FinalEndScore__c &gt;=  Target_Score__c</formula>
+        <inlineHelpText>True if Final Score is is greater or equal to Target Score</inlineHelpText>
+        <label>Success Achieved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TargetGroup__c</fullName>
+        <description>Returns the Target Group for KS2 Engagements
+
+Oscar Mawby @ Impact Box 18/12/19</description>
+        <externalId>false</externalId>
+        <formula>IF(  
+
+   AND(KeyStage__c = 2,  BaselineScore__c &lt; 90), 1,
+
+IF( 
+
+   AND(KeyStage__c = 2,  BaselineScore__c &gt;= 90, BaselineScore__c &lt; 100), 2,
+
+IF(
+
+   AND(KeyStage__c = 2,  BaselineScore__c &gt;= 100, BaselineScore__c &lt; 106), 3,
+
+IF(
+
+   AND(KeyStage__c = 2, BaselineScore__c &gt; 106), 4,
+
+NULL))))</formula>
+        <inlineHelpText>Returns the Target Group for KS2 Engagements</inlineHelpText>
+        <label>Target Group</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TargetPopulation__c</fullName>
+        <description>Oscar Mawby @ Impact Box 17/12/19</description>
+        <externalId>false</externalId>
+        <formula>IF(
+
+  OR(
+      ISPICKVAL( PupilPremium__c , &apos;Yes&apos;),
+      ISPICKVAL( LookedAfterChild__c , &apos;Yes&apos;),
+      ISPICKVAL( AlternativeProvision__c , &apos;Yes&apos;)
+    ),
+     
+
+TRUE,
+
+FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>True if child is in receipt of pupil premium (PP), a looked after child (LAC), or in alternative provision (AP).</inlineHelpText>
+        <label>Target Population</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Target_Score__c</fullName>
+        <description>Calculates engagements target score based on key stage, target group and their baseline score. Calculated by field update due to compiled chr limit on formula. 
+
+Oscar Mawby @ Impact Box 19/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculates engagements target score based on key stage, target group and their baseline score.</inlineHelpText>
+        <label>Target Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Times__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Position__r.StartTime__c )&amp;&quot; - &quot;&amp;TEXT( Position__r.EndTime__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Times</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TutorApplicationNote__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Note Tutor provided on applying for the position</inlineHelpText>
+        <label>Tutor Application Note</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TutorEmail__c</fullName>
+        <description>No Longer Used, updated by Oscar Mawby @ Impact Box, August 26th 2020 in order to allow for other formula fields. 
+
+Original: CASE(Type__c,
+
+&apos;Tutor&apos;, Tutor__r.Email,
+
+&apos;Pupil&apos;,  PupilsTutor__r.Tutor__r.Email,
+
+&apos;Jenny.Muter@thetutortrust.org&apos;)</description>
+        <externalId>false</externalId>
+        <formula>&apos;Jenny.Muter@thetutortrust.org&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>zzTutor Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TutorFullName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tutor__r.FirstName &amp; &quot; &quot; &amp;  Tutor__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tutor Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tutor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Tutor this engagement record belongs
+
+Oscar Mawby @ Impact Box 12/12/19</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Tutor the engagement record belongs to</inlineHelpText>
+        <label>Tutor</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Tutor</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Engagements (Tutor)</relationshipLabel>
+        <relationshipName>TutorEngagements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TutoringHours__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total hours tutor has tutored</inlineHelpText>
+        <label>Tutoring Hours</label>
+        <summarizedField>Attendance__c.SessionLengthhours__c</summarizedField>
+        <summaryFilterItems>
+            <field>Attendance__c.AttendedSession__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Attendance__c.RegisterCompletedDate__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Attendance__c.Engagement__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TutorsName__c</fullName>
+        <description>Used to populate &apos;Selected Tutors&apos; in session creation flow</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+
+Type__c = &apos;Tutor&apos;,
+
+Tutor__r.FirstName &amp; &quot; &quot; &amp;  LEFT(Tutor__r.LastName,1),
+
+PupilsTutor__r.ContactName__c 
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tutors Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Used to group pupil record types into single category</description>
+        <externalId>false</externalId>
+        <formula>CASE( RecordType.DeveloperName,
+
+&apos;KS2_Pupil&apos;, &apos;Pupil&apos;,
+&apos;KS3_Pupil&apos;, &apos;Pupil&apos;,
+&apos;KS4_Pupil&apos;, &apos;Pupil&apos;,
+&apos;Pupil&apos;, &apos;Pupil&apos;,
+&apos;Tutor&apos;, &apos;Tutor&apos;,
+&apos;Unknown&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>emailSchoolAddress__c</fullName>
+        <description>For use in an email merge field, created by Oscar @ Impact Box 24/06/2020</description>
+        <externalId>false</externalId>
+        <formula>Cohort__r.Opportunity__r.School__r.BillingStreet &amp; &quot;, &quot; &amp;  Cohort__r.Opportunity__r.School__r.BillingCity &amp; &quot;, &quot; &amp;  Cohort__r.Opportunity__r.School__r.BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>emailSchoolAddress</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Engagement</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Pupil__c</columns>
+        <columns>Tutor__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Attendances__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement__c.KS2_Pupil</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Created_by_me_no_tutor</fullName>
+        <columns>NAME</columns>
+        <columns>Cohort__c</columns>
+        <columns>PupilsTutor__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CreatedByCurrentUser__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>PupilsTutor__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement__c.KS2_Pupil</value>
+        </filters>
+        <label>KS2 Pupils Created by Me, No Tutors</label>
+    </listViews>
+    <listViews>
+        <fullName>KS3_Pupils_Created_by_Me_No_Tutors</fullName>
+        <columns>NAME</columns>
+        <columns>Cohort__c</columns>
+        <columns>KeyStage__c</columns>
+        <columns>PupilsTutor__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CreatedByCurrentUser__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>PupilsTutor__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement__c.KS3_Pupil</value>
+        </filters>
+        <label>KS3 Pupils Created by Me, No Tutors</label>
+    </listViews>
+    <listViews>
+        <fullName>KS4_Pupils_Created_by_Me_No_Tutors</fullName>
+        <columns>NAME</columns>
+        <columns>Cohort__c</columns>
+        <columns>KeyStage__c</columns>
+        <columns>PupilsTutor__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CreatedByCurrentUser__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>PupilsTutor__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement__c.KS4_Pupil</value>
+        </filters>
+        <label>KS4 Pupils Created by Me, No Tutors</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Tutor_Engagements</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IsMyEngagement__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Tutor Engagements</label>
+    </listViews>
+    <listViews>
+        <fullName>New_Bids_On_My_Positions_Today</fullName>
+        <columns>Position__c</columns>
+        <columns>PositionStartDate__c</columns>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>IsMyPosition__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>EngagementStatus__c</field>
+            <operation>equals</operation>
+            <value>Bid</value>
+        </filters>
+        <label>New Bids On My Positions Today</label>
+    </listViews>
+    <listViews>
+        <fullName>Tutor_Engagements</fullName>
+        <columns>NAME</columns>
+        <columns>TutorsName__c</columns>
+        <columns>NonContactHourlyPayRate__c</columns>
+        <columns>ContactTimeHourlyPayRate__c</columns>
+        <columns>NonContactTimePerSessionhours__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Tutor</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement__c.Tutor</value>
+        </filters>
+        <label>Tutor Engagements</label>
+        <sharedTo>
+            <role>InternalUser</role>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Engagement Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Engagements</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>KS2_Pupil</fullName>
+        <active>true</active>
+        <label>KS2 Pupil</label>
+        <picklistValues>
+            <picklist>AlternativeProvision__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EngagementStatus__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EnglishasanAdditionalLanguage__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FreeSchoolMeals__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LookedAfterChild__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PupilPremium__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SEND__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SchoolYear__c</picklist>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>KS3_Pupil</fullName>
+        <active>true</active>
+        <label>KS3 Pupil</label>
+        <picklistValues>
+            <picklist>AlternativeProvision__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EngagementStatus__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EnglishasanAdditionalLanguage__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FreeSchoolMeals__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LookedAfterChild__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PupilPremium__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SEND__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SchoolYear__c</picklist>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>KS4_Pupil</fullName>
+        <active>true</active>
+        <label>KS4 Pupil</label>
+        <picklistValues>
+            <picklist>AlternativeProvision__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EngagementStatus__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EnglishasanAdditionalLanguage__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FreeSchoolMeals__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LookedAfterChild__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PupilPremium__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SEND__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SchoolYear__c</picklist>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Pupil</fullName>
+        <active>false</active>
+        <label>Pupil</label>
+        <picklistValues>
+            <picklist>AlternativeProvision__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EngagementStatus__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EnglishasanAdditionalLanguage__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FreeSchoolMeals__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LookedAfterChild__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PupilPremium__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SEND__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SchoolYear__c</picklist>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Tutor</fullName>
+        <active>true</active>
+        <label>Tutor</label>
+        <picklistValues>
+            <picklist>AlternativeProvision__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EngagementStatus__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>EnglishasanAdditionalLanguage__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FreeSchoolMeals__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LookedAfterChild__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PupilPremium__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SEND__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SchoolYear__c</picklist>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>GCSE_KS4</fullName>
+        <active>true</active>
+        <description>Ensures grade value for year KS3 is a valid GCSE value</description>
+        <errorConditionFormula>AND(
+
+KeyStage__c = 4,
+
+OR( FinalEndScore__c  &lt; 0,FinalEndScore__c &gt; 9, BaselineScore__c  &lt; 0,BaselineScore__c &gt; 9)
+
+)</errorConditionFormula>
+        <errorMessage>The grade value is not valid for this Key Stage, GCSE needs to be between 0-9.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PV_questions_0_10</fullName>
+        <active>false</active>
+        <description>Oscar Mawby @ Impact Box 12/12/19</description>
+        <errorConditionFormula>OR(
+
+ PostPVEnjoyedTuition__c &lt;= 10,
+ PostPVHelpedToImprove__c &lt;= 10,
+ PrePVAbilityPerception__c &lt;= 10,
+ PrePVAskingForHelp__c &lt;= 10,
+ PrePVEnjoyment__c &lt;= 10,
+ PrePVResilience__c &lt;= 10
+)</errorConditionFormula>
+        <errorMessage>PV Values must be between 0-10</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PuMA_PiRA_KS3</fullName>
+        <active>true</active>
+        <description>Ensures grade value for year 7, 8 and 9 is a valid PuMA/PiRA value</description>
+        <errorConditionFormula>AND(
+
+ KeyStage__c = 3,
+
+OR( FinalEndScore__c  &lt; 70,FinalEndScore__c &gt; 130, BaselineScore__c  &lt; 70,BaselineScore__c &gt; 130)
+
+)</errorConditionFormula>
+        <errorMessage>The grade value is not valid for KS3, PuMA/PiRA needs to be between 70-130.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SATs_KS2</fullName>
+        <active>true</active>
+        <description>Ensures grade value for year KS2 is a valid SATs value</description>
+        <errorConditionFormula>AND(
+
+ KeyStage__c = 2,
+
+OR( FinalEndScore__c  &lt; 80,FinalEndScore__c &gt; 120, BaselineScore__c  &lt; 80,BaselineScore__c &gt; 120)
+
+)</errorConditionFormula>
+        <errorMessage>The grade value is not valid for this Key Stage, SATs need to be between 80-120.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Tutor_Is_Changed_Confirmation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISCHANGED( PupilsTutor__c), NOT(ISBLANK(PRIORVALUE(PupilsTutor__c))),  ConfirmTutorChange__c = FALSE)</errorConditionFormula>
+        <errorMessage>If you wish to change the pupil&apos;s tutor and update all future attendance records, you must confirm this change by ticking the &apos;Confirm Tutor Change&apos; field</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Primary</fullName>
+        <default>false</default>
+        <label>Primary</label>
+    </customValue>
+    <customValue>
+        <fullName>Secondary</fullName>
+        <default>false</default>
+        <label>Secondary</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary and Secondary</fullName>
+        <default>false</default>
+        <label>Primary and Secondary</label>
+    </customValue>
+    <customValue>
+        <fullName>College / Post 16</fullName>
+        <default>false</default>
+        <label>College / Post 16</label>
+    </customValue>
+    <customValue>
+        <fullName>LC Virtual School</fullName>
+        <default>false</default>
+        <label>LC Virtual School</label>
+    </customValue>
+    <customValue>
+        <fullName>Not a school account</fullName>
+        <default>false</default>
+        <label>Not a school account</label>
+    </customValue>
+    <customValue>
+        <fullName>Alumni - unknown</fullName>
+        <default>false</default>
+        <label>Alumni - unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>AP / LAC</fullName>
+        <default>false</default>
+        <label>AP / LAC</label>
+    </customValue>
+    <masterLabel>School Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

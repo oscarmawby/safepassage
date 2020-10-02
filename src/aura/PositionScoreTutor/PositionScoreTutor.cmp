@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute name="tutor" type="Object"/>
+    <aura:attribute name="score" type="Decimal"/>
+    <td style="font-weight:normal;">
+        <a href="{!'/'+v.tutor.tutor.Id}">{!v.tutor.tutor.FirstName}&nbsp;{!v.tutor.tutor.LastName}</a>
+    </td>
+    <td style="font-weight:normal;">{!v.tutor.score}
+    </td>
+    <td style="font-weight:normal;">{!v.tutor.distance}
+    </td>
+    <td style="font-weight:normal;">{!v.tutor.tutor.School_Type__c}
+    </td>
+    <td style="font-weight:normal;">{!v.tutor.tutor.Area__c}
+    </td>
+    <td style="font-weight:normal;">{!v.tutor.tutor.Email}
+    </td>
+    
+    
+</aura:component>

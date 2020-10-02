@@ -1,0 +1,85 @@
+{
+  "appPageId" : "b6cd5cd8-c829-4c8b-a9f9-a5910f5eb5f7",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "b2324ee7-9830-4abf-98e7-65a00197711a",
+  "label" : "My Account",
+  "regions" : [ {
+    "id" : "b111859c-8239-4cb2-b985-f4780409d628",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "65c151ce-679c-4b56-9653-8c8982ca2167",
+          "columns" : [ {
+            "UUID" : "f15c61cb-9fa6-469c-8c0d-97c3cf506cce",
+            "columnName" : "column 1",
+            "columnKey" : "col1",
+            "columnWidth" : "12",
+            "seedComponents" : [ {
+              "fqn" : "forceCommunity:recordHeadline",
+              "attributes" : {
+                "recordId" : "{!CurrentUser.accountId}",
+                "sfdc:identifier" : "forceCommunity_recordHeadline"
+              }
+            }, {
+              "fqn" : "forceCommunity:recordHomeTabs",
+              "attributes" : {
+                "recordId" : "{!CurrentUser.accountId}",
+                "sfdc:identifier" : "forceCommunity_recordHomeTabs"
+              }
+            } ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "65c151ce-679c-4b56-9653-8c8982ca2167",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><b>Create a calendar to see all of your confirmed tutoring sessions. </b></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "0a7c1e58-20f6-48d8-895f-f228e99382ec",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "showCreateNewCalendar" : true,
+            "showOtherCalendars" : false,
+            "showSidebar" : true
+          },
+          "componentName" : "forceCommunity:calendar",
+          "id" : "4eaeff58-607c-4241-a880-f4720fcd7974",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f15c61cb-9fa6-469c-8c0d-97c3cf506cce",
+        "regionLabel" : "column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "850d2168-5cea-4662-b6f2-b41e0370cd25",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4949296f-9266-45c1-943f-55bcb39f5844",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "my-account"
+}

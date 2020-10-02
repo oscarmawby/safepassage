@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>CriteriaLogicOperand__c</fullName>
+        <description>Criteria operators in the case of there being two criteria e.g. Position field equals true AND Contact field equals true then 5 points.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Criteria Logic Operand</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AND</fullName>
+                    <default>false</default>
+                    <label>AND</label>
+                </value>
+                <value>
+                    <fullName>OR</fullName>
+                    <default>false</default>
+                    <label>OR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CriteriaOperator__c</fullName>
+        <description>Criteria operator of the given fields. eg. Field 1 matches Field 2, then choose matching value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Criteria Operator</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Matching Value</fullName>
+                    <default>true</default>
+                    <label>Matching Value</label>
+                </value>
+                <value>
+                    <fullName>Contains</fullName>
+                    <default>false</default>
+                    <label>Field 1 Contains Field 2</label>
+                </value>
+                <value>
+                    <fullName>Is</fullName>
+                    <default>false</default>
+                    <label>Is</label>
+                </value>
+                <value>
+                    <fullName>Field2ContainsField1</fullName>
+                    <default>false</default>
+                    <label>Field 2 Contains Field 1</label>
+                </value>
+                <value>
+                    <fullName>ContainsGivenValue</fullName>
+                    <default>false</default>
+                    <label>Contains Given Value</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CriteriaType__c</fullName>
+        <description>Hard Criteria (if no match, Tutor cannot see position).</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Criteria Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hard</fullName>
+                    <default>true</default>
+                    <label>Hard</label>
+                </value>
+                <value>
+                    <fullName>Soft</fullName>
+                    <default>false</default>
+                    <label>Soft</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Field1__c</fullName>
+        <description>Field 1 for Contact. 
+Field 1 always first in operator. e.g Field 1 CONTAINS Field 2.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Field 1 - Contact</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Field2__c</fullName>
+        <description>Field 2 for Position__c.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Field 2 - Position</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GivenValue2__c</fullName>
+        <description>Given Value for Position field assuming two argument matching criteria.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Given Value 2</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GivenValue__c</fullName>
+        <description>Any hard coded given value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Given Value</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Point__c</fullName>
+        <description>Point value added to total score if criteria met.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Point</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Matching Criteria</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <columns>CriteriaOperator__c</columns>
+        <columns>CriteriaType__c</columns>
+        <columns>Field1__c</columns>
+        <columns>Field2__c</columns>
+        <columns>GivenValue__c</columns>
+        <columns>GivenValue2__c</columns>
+        <columns>Point__c</columns>
+        <columns>CriteriaLogicOperand__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <pluralLabel>MatchingCriteria</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
